@@ -1,6 +1,6 @@
 import {NoteDataModel} from "../model/NoteDataModel";
 
-export interface NoteService{
+export interface NoteDataService{
   add(note: NoteDataModel);
   getAll();
   get(id: string);

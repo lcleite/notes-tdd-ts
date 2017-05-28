@@ -1,7 +1,7 @@
-import {DataSource} from "./DataSource";
+import {InternalDataSource} from "./InternalDataSource";
 import {NoteDataModel} from "../model/NoteDataModel";
 
-export class NoteDataSource extends DataSource<NoteDataModel>{
+export class NoteInternalDataSource extends InternalDataSource<NoteDataModel>{
 
   constructor(){
     super();
@@ -13,7 +13,7 @@ export class NoteDataSource extends DataSource<NoteDataModel>{
   }
 }
 
-class NoteDocumentMapper implements DataSource.PouchMapper<NoteDataModel>{
+class NoteDocumentMapper implements InternalDataSource.PouchMapper<NoteDataModel>{
   documentToModel(doc: any): NoteDataModel {
     let model = new NoteDataModel();
 

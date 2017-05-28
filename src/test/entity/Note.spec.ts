@@ -1,4 +1,4 @@
-import {Note} from "../app/model/Note";
+import {Note} from "../../app/entity/Note";
 describe('Note test', () => {
 
   it('should create an empty note', () => {
