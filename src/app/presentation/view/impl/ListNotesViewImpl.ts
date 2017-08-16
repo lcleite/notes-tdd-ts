@@ -17,7 +17,6 @@ export class ListNotesViewImpl implements ListNotesView{
     return this.notes;
   }
   
-  
   setNotes(notes: NoteViewModel[]) {
     this.notes = notes;
   }
